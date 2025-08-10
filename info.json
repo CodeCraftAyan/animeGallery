@@ -1,0 +1,77 @@
+[
+    {
+        "id": 1,
+        "title": "Bleach",
+        "poster_img": "https://i.pinimg.com/736x/b7/69/db/b769db7e9f5bb9451321d3393a2cd28e.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Ponyo",
+        "poster_img": "https://i.pinimg.com/1200x/6f/5f/52/6f5f5298b9922669abb38fdf2643cde4.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Spy x Family",
+        "poster_img": "https://i.pinimg.com/1200x/70/c7/a1/70c7a1f70c435da020cfe90937eb823f.jpg"
+    },
+    {
+        "id": 4,
+        "title": "My Hero Academia",
+        "poster_img": "https://i.pinimg.com/1200x/14/26/55/142655ed84987049433541b313bedd6b.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Naruto",
+        "poster_img": "https://i.pinimg.com/1200x/a8/7d/01/a87d0191f7bde1f9368877b0bfc11414.jpg"
+    },
+    {
+        "id": 6,
+        "title": "One Piece",
+        "poster_img": "https://i.pinimg.com/1200x/63/d0/bc/63d0bcc7a8041ba2ceb02bb7b891acfb.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Dragon Ball",
+        "poster_img": "https://i.pinimg.com/1200x/d6/6e/a9/d66ea94aeb3dd753c04522a86416a7bf.jpg"
+    },
+    {
+        "id": 8,
+        "title": "One Punch Man",
+        "poster_img": "https://i.pinimg.com/1200x/dd/15/14/dd15149b4b37ea1ac42b8e09986f349d.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Jujutsu Kaisen",
+        "poster_img": "https://i.pinimg.com/1200x/f7/7d/8f/f77d8f673fc04e107f1ad7f22397efe3.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Dandadan",
+        "poster_img": "https://i.pinimg.com/1200x/1b/33/fe/1b33fe75d35e0f05d26fbb93b98d14b1.jpg"
+    },
+    {
+        "id": 11,
+        "title": "Demon Slayer",
+        "poster_img": "https://i.pinimg.com/1200x/91/aa/e8/91aae8b21038845c11b9308629fd5b99.jpg"
+    },
+    {
+        "id": 12,
+        "title": "Fairy Tail",
+        "poster_img": "https://i.pinimg.com/1200x/f7/ae/7f/f7ae7f38bf0b6c093fc5ae1a73f5f0ac.jpg"
+    },
+    {
+        "id": 13,
+        "title": "Chainsaw Man",
+        "poster_img": "https://i.pinimg.com/1200x/48/f4/2a/48f42a0e2b8c46cd06f8f700be119274.jpg"
+    },
+    {
+        "id": 14,
+        "title": "Attack on Titan",
+        "poster_img": "https://i.pinimg.com/1200x/b4/eb/26/b4eb26a2348396cc3ee62f985d4c1892.jpg"
+    },
+    {
+        "id": 15,
+        "title": "Death Note",
+        "poster_img": "https://i.pinimg.com/1200x/76/8d/16/768d1615ff8e54461eab3fe955092524.jpg"
+    }
+]

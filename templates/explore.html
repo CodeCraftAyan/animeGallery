@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Explore
+{% endblock %}
+
+{% block content %}
+
+<div class="columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-4 p-12">
+    {% for d in data %}
+    <a href="{{ url_for('views.poster', p_id=d.id) }}" class="cursor-pointer">
+        <div class="relative mb-4 break-inside-avoid rounded-lg overflow-hidden shadow-lg text-gray-200 bg-gray-800 transition-transform duration-300 hover:scale-105">
+            <img src="{{ d.poster_img }}" alt="{{ d.title }}" class="w-full">
+            <div class="p-3">
+                <h3 class="text-sm md:text-lg font-semibold">#{{ d.title }}</h3>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+
+{% endblock %}

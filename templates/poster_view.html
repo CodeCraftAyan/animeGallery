@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% set hide_header = True %}
+
+{% block title %}
+
+{{ poster.title }}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="flex flex-col items-center justify-center min-h-screen bg-gray-900 px-4 relative">
+    <a href="{{ url_for('views.index') }}" class="absolute top-4 left-4 text-white text-2xl hover:text-gray-300">
+        <i class="bi bi-arrow-left"></i>
+    </a>
+
+    <img 
+        src="{{ url_for('static', filename=poster.poster_img) }}" 
+        alt="{{ poster.title }}" 
+        class="max-h-[85vh] w-auto object-contain rounded-2xl shadow-2xl"
+    >
+
+    <div class="mt-6 bg-opacity-60 rounded-xl px-6 py-3 shadow-md text-center">
+        <h1 class="text-white text-2xl font-semibold tracking-wide">
+            #{{ poster.title }}
+        </h1>
+        <p class="text-md text-sky-400">
+            {% if poster.created_at %}
+                {{ poster.created_at.strftime('%b %d, %Y') }}, post by {{ poster.owner }}
+            {% else %}
+                Unknown date, post by {{ poster.owner }}
+            {% endif %}
+        </p>
+    </div>
+</div> 
+
+{% endblock %}

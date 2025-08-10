@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Search Results
+{% endblock %}
+
+{% block content %}
+
+<h2 class="px-12 py-4 text-xl text-gray-200">Search Results for "{{ query }}"</h2>
+
+<div class="columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-4 px-12 py-4">
+    {% if posters %}
+        {% for poster in posters %}
+        <a href="{{ url_for('views.gallery', p_title=poster.title, poster_id=poster.poster_id) }}" class="cursor-pointer">
+            <div class="relative mb-4 break-inside-avoid rounded-lg overflow-hidden shadow-lg text-gray-200 bg-gray-800 transition-transform duration-300 hover:scale-105">
+                <img src="{{ url_for('static', filename=poster.poster_img) }}" alt="{{ poster.title }}" class="w-full">
+                <div class="p-3">
+                    <h3 class="text-md md:text-lg font-semibold">#{{ poster.title }}</h3>
+                    <p class="text-sm text-gray-400">
+                        {% if poster.created_at %}
+                            {{ poster.created_at.strftime('%b %d, %Y') }}, post by {{ poster.owner }}
+                        {% else %}
+                            Unknown date, post by {{ poster.owner }}
+                        {% endif %}
+                    </p>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+    {% endif %}
+    
+    {% if json_results %}
+        {% for poster in json_results %}
+        <a href="{{ url_for('views.poster', p_id=poster.id) }}" class="cursor-pointer">
+            <div class="relative mb-4 break-inside-avoid rounded-lg overflow-hidden shadow-lg text-gray-200 bg-gray-800 transition-transform duration-300 hover:scale-105">
+                <img src="{{ poster.poster_img }}" alt="{{ poster.title }}" class="w-full">
+                <div class="p-3">
+                    <h3 class="text-md md:text-lg font-semibold">#{{ poster.title }}</h3>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+    {% endif %}
+</div>
+
+{% if not posters and not json_results %}
+<p class="text-indigo-400 px-12 py-0">Not Available.</p>
+{% endif %}
+
+{% endblock %}
